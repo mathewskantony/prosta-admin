@@ -1,0 +1,7 @@
+<md-toolbar color="primary">
+  <span><app-menu></app-menu></span>
+  <span>{{title}}</span>
+  <span class="toolbar-spacer"></span>
+  <span *ngIf="loginService.isLoggedIn" (click)="onJobs()"><md-icon>assignment</md-icon></span>
+  <span *ngIf="loginService.isLoggedIn" (click)="onCalendar()"><md-icon>perm_contact_calendar</md-icon></span>
+</md-toolbar>
